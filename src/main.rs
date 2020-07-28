@@ -8,7 +8,7 @@ fn main() {
                 Ok(number) => {
                     let mut is_prime : bool = true;
                     let mut divisor : i64 = -1;
-                    println!("Sqrt of {0} is {1}.", number, (number as f32).sqrt() as i64);
+                    println!("Sqrt of {0} is {1}.", number, (number as f32).sqrt());
                     for n in 2..((number as f64).sqrt() as i64 -1) {
                         if number % n == 0  {
                             is_prime = false;
