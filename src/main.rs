@@ -9,9 +9,8 @@ fn main() {
                     let mut is_prime: bool = true;
                     let mut divisor: i64 = -1;
                     println!("Sqrt of {0} is {1}.", number, (number as f32).sqrt());
-                    println!("Sqrt of {0} is {1}.", number, (number as f32).sqrt() as i32);
+                    //println!("Sqrt of {0} is {1}.", number, (number as f32).sqrt() as i32);
                     for n in 2..((number as f64).sqrt() as i64 + 1) {
-                        println!("Testing {0}", n);
                         if number % n == 0 {
                             is_prime = false;
                             divisor = n;
